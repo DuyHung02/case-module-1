@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .khoi-slide {
+        width: 100%;
+        height: 700px;
+        position: relative;
+    }
+    .cac-slide{
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+    }
+    .slide {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .slide.active {
+        opacity: 1;
+        visibility: hidden;
+    }
+    img {
+        width: 100%;
+    }
+    span#back{
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        z-index: 10;
+        cursor: pointer;
+    }
+    span#next {
+        position: absolute;
+        top: 30%;
+        right: 0%;
+        z-index: 10;
+        cursor: pointer;
+    }
+    .nut-slide span{
+        color: #cacaff;
+        font-size: 60px;
+        opacity: 0.6;
+    }
+</style>
+<body>
+<div class="khoi-slide">
+    <div class="cac-slide">
+        <div class="slide active"><img src="meowcloud.jpg"></div>
+        <div class="slide"><img src="twodog.jpg"></div>
+        <div class="slide"><img src="miucartoon.jpg"></div>
+        <div class="slide"><img src="catart.jpg"></div>
+    </div>
+    <div class="nut-slide">
+        <span id="back"><</span>
+        <span id="next">></span>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
