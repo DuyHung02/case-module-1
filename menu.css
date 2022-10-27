@@ -3,13 +3,13 @@ html {
 }
 /*combo header*/
 #header {
-    background-color: #ff5050;
+    background-color: #ff6a7b;
     position: absolute;
     top: 0px;
     left: 0px;
 }
 #bgr1 {
-    background-color: #ff8e75;
+    background-color: rgba(255,106,123,0.71);
     position: absolute;
     width: 75%;
     height: 400px;
@@ -82,7 +82,7 @@ html {
     font-size: 25px;
     width: 75%;
     border: white;
-    background-color: #ff5050;
+    background-color: #ff6a7b;
 }
 /*combo sổ xuống*/
 .dropdown {
@@ -94,7 +94,7 @@ html {
     font-size: 18px;
     display: none;
     position: absolute;
-    background-color: #ff5050;
+    background-color: #ff6a7b;
     min-width: 157px;
     box-shadow: 0px 0px 0px 0px;
     z-index: 1;
@@ -107,7 +107,7 @@ html {
     display: block;
 }
 .dropdown-menu {
-    background-color: #ff5050;
+    background-color: #ff6a7b;
     border-radius: 5px;
     font-size: 20px;
     color: white;
@@ -133,7 +133,7 @@ html {
     top: 217px;
     left: 30px;
     height: 350px;
-    border: #ff5050;
+    border: #ff6a7b;
     border-style: double;
 }
 .paragrap1 {
@@ -143,8 +143,8 @@ html {
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
-    text-decoration: #ff5050;
-    color: #ff5050;
+    text-decoration: #ff6a7b;
+    color: #ff6a7b;
 }
 .paragrap2 {
     position: absolute;
@@ -165,7 +165,7 @@ html {
     left: 980px;
 }
 #hr1 {
-    background-color: #ff5050;
+    background-color: #ff6a7b;
     border: none;
     position: absolute;
     width: 805px;
@@ -177,10 +177,10 @@ html {
     position: absolute;
     top: 567px;
     left: 340px;
-    color: #ff5050;
+    color: #ff6a7b;
     font-size: 20px;
     font-family: sans-serif;
-    border: #ff5050;
+    border: #ff6a7b;
     border-style: solid;
     padding: 5px;
     border-radius: 10px;
@@ -188,7 +188,7 @@ html {
 }
 .sp {
     margin: 20px;
-    border: #ff5050;
+    border: #ff6a7b;
     border-style: dashed;
     background-color: white;
     text-align: center;
@@ -214,7 +214,7 @@ html {
     position: absolute;
     top: 650px;
     left: 450px;
-    border: #ff5050;
+    border: #ff6a7b;
     border-style: dashed;
     border-spacing: 10px;
 }
@@ -223,7 +223,7 @@ html {
     width: 350px;
     top: 680px;
     left: 35px;
-    border: #ff5050;
+    border: #ff6a7b;
     border-style: double;
     padding: 10px;
     border-radius: 10px;
@@ -235,7 +235,7 @@ html {
 #imgsanpham {
     border: 1px;
     border-radius: 5px;
-    border-color: #ff5050;
+    border-color: #ff6a7b;
     border-style: solid;
     width: 200px;
 }
@@ -243,6 +243,7 @@ html {
     width: 280px;
     font-size: 18px;
     font-family: sans-serif;
+    background-color: rgba(255,251,244,0.51);
 }
 #pricesanpham {
     width: 280px;
@@ -250,12 +251,13 @@ html {
     font-size: 25px;
     font-family: sans-serif;
     font-weight: bold;
+    background-color: rgba(255,251,244,0.51);
 }
 #delete {
     transition-duration: 0.4s;
     background-color: white;
     color: black;
-    border: 2px solid #ff5050;
+    border: 2px solid #ff6a7b;
     border-radius: 5px;
     display: inline-block;
     padding: 16px 32px;
@@ -263,7 +265,7 @@ html {
     font-weight: bold;
  }
 #delete:hover {
-    background-color: #ff5050;
+    background-color: #ff6a7b;
     color: white;
 }
 #cotdelete {
@@ -278,7 +280,7 @@ html {
     transition-duration: 0.4s;
     background-color: white;
     color: black;
-    border: 2px solid #ff5050;
+    border: 2px solid #ff6a7b;
     border-radius: 5px;
     display: inline-block;
     padding: 16px 32px;
@@ -286,20 +288,40 @@ html {
     font-weight: bold;
 }
 #edit:hover {
-    background-color: #ff5050;
+    background-color: #ff6a7b;
     color: white;
 }
 #them {
     transition-duration: 0.4s;
     background-color: white;
     color: black;
-    border: 2px solid #ff5050;
+    border: 2px solid #ff6a7b;
     border-radius: 5px;
     display: inline-block;
     padding: 6px 12px;
     cursor: pointer;
 }
 #them:hover {
-    background-color: #ff5050;
+    background-color: #ff6a7b;
     color: white;
 }
+#table3 {
+    position: absolute;
+    background-color: rgba(255,106,123,0.61);
+    padding: 10px;
+    left: 1020px;
+    top: 200px;
+    width: 300px;
+    height: 350px;
+    border: white;
+    border-style: dashed;
+}
+a {
+    color: black;
+}
+hr {
+    border-style: dashed;
+    border-color: white;
+}
+
+

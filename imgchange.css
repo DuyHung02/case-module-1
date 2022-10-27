@@ -6,6 +6,7 @@
     left: 370px;
     border-style: dashed;
     border-color: white;
+    background-color: rgba(255,106,123,0.61);
 }
 .cac-slide{
     position: absolute;

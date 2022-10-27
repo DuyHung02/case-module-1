@@ -40,6 +40,7 @@ table2();
         let newSanpham = new Sanpham(imgsanpham, namesanpham, pricesanpham);
         listsanpham.splice(index, 1, newSanpham);
         table2();
+        clear()
         localStorage.setItem("sp1",JSON.stringify(listsanpham));
     }
 
@@ -50,10 +51,18 @@ table2();
         let newSanpham = new Sanpham(imgsanpham, namesanpham, pricesanpham);
         listsanpham.push(newSanpham);
         table2();
+        clear()
         localStorage.setItem("sp1",JSON.stringify(listsanpham));
     }
         function xoa(index) {
         listsanpham.splice(index, 1);
         table2();
         localStorage.setItem("sp1",JSON.stringify(listsanpham));
+        }
+
+        function clear() {
+        let imgsanpham = document.getElementById("inputImg").value = "";
+        let namesanpham = document.getElementById("inputName").value = "";
+        let pricesanpham = document.getElementById("inputPrice").value = "";
+
         }
