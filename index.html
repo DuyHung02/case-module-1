@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Luvpet</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="imgchange.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+<div id="header" style="width: 100%; height: 25px"></div>
+<a id="tk" style="cursor: pointer" onclick="location.href='login.html'"></a>
+<a id="shop" style="cursor: pointer"></a>
+<div id="cook"></div>
+<div id="phone"></div>
+<div id="logo"></div>
+<p class="paragrap1">0902283388</p>
+<p class="paragrap2">Hỗ trợ khách hàng</p>
+<p class="paragrap1" id="time">7h - 21h30</p>
+<p class="paragrap2" id="ptime">Thời gian mở cửa</p>
+
+<table id="table1">
+    <tr>
+        <td>
+            <div class="dropdown">
+                <button class="dropdown-menu">Trang chủ</button>
+            </div>
+        </td>
+        <td>
+            <div class="dropdown">
+                <button class="dropdown-menu">Giới thiệu</button>
+            </div>
+        </td>
+        <td>
+            <div class="description option dropdown">
+                <button class="dropdown-menu">Shop cún</button>
+                <div class="dropdown-ct">
+                    <a>Đồ ăn</a>
+                    <a>Phụ kiện</a>
+                    <a>Thời trang</a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="description option dropdown">
+                <button class="dropdown-menu">Shop mèo</button>
+                <div class="dropdown-ct">
+                    <a>Đồ ăn</a>
+                    <a>Phụ kiện</a>
+                    <a>Thời trang</a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="description option dropdown">
+                <button class="dropdown-menu">Tin tức</button>
+                <div class="dropdown-ct">
+                    <a>Tháng 11</a>
+                    <a>Tháng 10</a>
+                    <a>Tháng 9</a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="description option dropdown">
+                <button class="dropdown-menu">Liên hệ</button>
+                <div class="dropdown-ct">
+                    <a>Hotline 1 0902283388</a>
+                    <a>Hotline 2 0904438822</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<a href="https://www.google.com/maps/place/50+Ng.+4+P.%C4%90%E1%BA%B7ng+V%C4%83n+Ng%E1%BB%AF,+Trung+T%E1%BB%B1,+%C4%90%E1%BB%91ng+%C4%90a,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0102354,105.8336269,15.5z/data=!4m5!3m4!1s0x3135ab80a3578d81:0x89aaed9441847843!8m2!3d21.0097178!4d105.8337869?hl=vi-VN"
+   target="_blank">
+    <img id="map" src="img/luvpetmap.png">
+</a>
+<form>
+    <input id="search" type="text" placeholder="Tìm kiếm...">
+</form>
+<div id="bgr1"></div>
+<div class="khoi-slide">
+    <div class="cac-slide">
+        <div class="slide"><img src="img/twodog.jpg"></div>
+        <div class="slide active"><img src="img/meowcloud.jpg"></div>
+        <div class="slide"><img src="img/miucartoon.jpg"></div>
+        <div class="slide"><img src="img/catart.jpg"></div>
+    </div>
+    <div class="nut-slide">
+        <span id="btn-prev"><i class="fas fa-chevron-left"></i></span>
+        <span id="btn-next"><i class="fas fa-chevron-right"></i></span>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+<table id="table3">
+    <tr>
+        <td><a href="https://zingnews.vn/quan-ca-phe-thu-cung-post704301.html">Những quán cafe thú cưng</a></td>
+    </tr>
+</table>
+
+<div id="hr1"></div>
+<p id="spbc">Sản phẩm bán chạy</p>
+<div id="hr2"></div>
+<table id="table2" width="400">
+</table>
+<table id="themsanpham">
+    <tr>
+        <th colspan="2" style="font-size: 25px; color: #ff5050">Thêm sản phẩm</th>
+    </tr>
+    <tr>
+        <td><div>Ảnh sản phẩm</div></td>
+        <td><input id="inputImg" type="text" placeholder="'url' or name file" style="width: 150px"></td>
+    </tr>
+    <tr>
+        <td><div>Tên sản phẩm</div></td>
+        <td><input id="inputName" type="text" placeholder="tên sản phẩm" style="width: 150px"></td>
+    </tr>
+    <tr>
+        <td><div>Giá sản phẩm</div></td>
+        <td><input id="inputPrice" type="text" placeholder="giá sản phẩm ..đ" style="width: 150px"></td>
+    </tr>
+    <tr>
+        <td style="text-align: center" colspan="2"><button id="them" onclick="add()">Xác nhận</button></td>
+    </tr>
+</table>
+
+<script type="text/javascript" src="js/tuong-tac.js"></script>
+
+</body>
+</html>

@@ -1,3 +1,6 @@
+html {
+    background-image: url("img/background.webp");
+}
 /*combo header*/
 #header {
     background-color: #ff5050;
@@ -5,15 +8,23 @@
     top: 0px;
     left: 0px;
 }
+#bgr1 {
+    background-color: #ff8e75;
+    position: absolute;
+    width: 75%;
+    height: 400px;
+    top: 170px;
+    left: 340px;
+}
 #logo {
-    content: url("logopet.png");
+    content: url("img/logopet.png");
     position: absolute;
     top: -50px;
     width: 300px;
     height: 350px;
 }
 #tk {
-    content: url("tk.png");
+    content: url("img/tk.png");
     position: absolute;
     width: 80px;
     top: 9px;
@@ -23,7 +34,7 @@
     transform:translate(0,4px);
 }
 #shop {
-    content: url("shop.png");
+    content: url("img/shop.png");
     position: absolute;
     width: 90px;
     top: 3px;
@@ -33,21 +44,20 @@
     transform:translate(0,4px);
 }
 #cook {
-    content: url("cook.png");
+    content: url("img/cook.png");
     position: absolute;
     width: 75px;
     top: 15px;
     left: 900px;
-
 }
 #phone {
     position: absolute;
-    content: url("phone.png");
+    content: url("img/phone.png");
     width: 70px;
     top: 17px;
     left: 660px;
 }
-input[type="text"] {
+#search {
     position: absolute;
     top: 47px;
     left: 343px;
@@ -59,13 +69,13 @@ input[type="text"] {
     padding: 12px 14px;
     transition: 0.6s ease-in-out;
 }
-input[type="text"]:focus {
+#search:focus {
     width: 300px;
     background-color: #cacaff;
 }
 /*hết combo header*/
 
-table {
+#table1 {
     position: absolute;
     top: 110px;
     left: 341px;
@@ -80,6 +90,7 @@ table {
     display: inline-block;
 }
 .dropdown-ct {
+    border-radius: 5px;
     font-size: 18px;
     display: none;
     position: absolute;
@@ -89,6 +100,7 @@ table {
     z-index: 1;
 }
 .dropdown-ct a {
+    border-radius: 5px;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -96,6 +108,7 @@ table {
 }
 .dropdown-menu {
     background-color: #ff5050;
+    border-radius: 5px;
     font-size: 20px;
     color: white;
     padding: 10px;
@@ -117,9 +130,11 @@ table {
 
 #map {
     position: absolute;
-    top: 250px;
+    top: 217px;
     left: 30px;
     height: 350px;
+    border: #ff5050;
+    border-style: double;
 }
 .paragrap1 {
     position: absolute;
@@ -149,26 +164,142 @@ table {
     top: 60px;
     left: 980px;
 }
-
-/*combo ảnh slide*/
-/*.khoi-slide {*/
-/*    width: 600px;*/
-/*    height: 400px;*/
-/*    position: relative;*/
-/*}*/
-/*.cac-slide{*/
-/*    width: 600px;*/
-/*    height: 400px;*/
-/*    overflow: hidden;*/
-/*}*/
-/*.slide {*/
-/*    position: absolute;*/
-/*    top: 0px;*/
-/*    left: 0px;*/
-/*    opacity: 0;*/
-/*    visibility: hidden;*/
-/*}*/
-/*.slide.active {*/
-/*    opacity: 1;*/
-/*    visibility: hidden;*/
-/*}*/
+#hr1 {
+    background-color: #ff5050;
+    border: none;
+    position: absolute;
+    width: 805px;
+    height: 5px;
+    top: 604px;
+    left: 547px;
+}
+#spbc {
+    position: absolute;
+    top: 567px;
+    left: 340px;
+    color: #ff5050;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: #ff5050;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+.sp {
+    margin: 20px;
+    border: #ff5050;
+    border-style: dashed;
+    background-color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 100px;
+}
+.asp {
+    width: 150px;
+    height: 150px;
+}
+.ten_sp {
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    color: black;
+    top: 185px;
+    left: 35px;
+}
+#table2 {
+    width: 65%;
+    position: absolute;
+    top: 650px;
+    left: 450px;
+    border: #ff5050;
+    border-style: dashed;
+    border-spacing: 10px;
+}
+#themsanpham {
+    position: absolute;
+    width: 350px;
+    top: 680px;
+    left: 35px;
+    border: #ff5050;
+    border-style: double;
+    padding: 10px;
+    border-radius: 10px;
+    border-spacing: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: rgba(255,251,244,0.51);
+}
+#imgsanpham {
+    border: 1px;
+    border-radius: 5px;
+    border-color: #ff5050;
+    border-style: solid;
+    width: 200px;
+}
+#namesanpham {
+    width: 280px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+#pricesanpham {
+    width: 280px;
+    color: #1e7e34;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#delete {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid #ff5050;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 16px 32px;
+    cursor: pointer;
+    font-weight: bold;
+ }
+#delete:hover {
+    background-color: #ff5050;
+    color: white;
+}
+#cotdelete {
+    width: 200px;
+    text-align: center;
+}
+#cotedit {
+    width: 200px;
+    text-align: center;
+}
+#edit {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid #ff5050;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 16px 32px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#edit:hover {
+    background-color: #ff5050;
+    color: white;
+}
+#them {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid #ff5050;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+#them:hover {
+    background-color: #ff5050;
+    color: white;
+}

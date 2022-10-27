@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Account.js"></script>
+</head>
+<body>
+<div align="center">
+  <h1>Đăng ký</h1>
+  Nhập username: <input id="username" placeholder="name"><br>
+  Nhập password: <input id="password" placeholder="password" type="password"><br>
+  Nhập full name: <input id="fullname" placeholder="fullname" type="text"><br>
+  <br>
+  <button onclick="dangky()">Đăng ký</button>
+</div>
+
+</body>
+</html>
+<script>
+    let accounts = JSON.parse(localStorage.getItem("accounts"));
+    if (accounts === null) {
+        accounts = [];
+    }
+
+    function dangky() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        let fullname = document.getElementById("fullname").value;
+        let account = new Account(username, password, fullname);
+        accounts.push(account);
+        localStorage.setItem("accounts", JSON.stringify(accounts));
+        location.href = "login.html"
+    }
+</script>

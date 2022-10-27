@@ -1,0 +1,69 @@
+.khoi-slide {
+    width: 600px;
+    height: 350px;
+    position: relative;
+    top: 190px;
+    left: 370px;
+    border-style: dashed;
+    border-color: white;
+}
+.cac-slide{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 90%;
+    height: 600px;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+.slide img {
+    width: 100%;
+}
+span#btn-prev{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    z-index: 10;
+    cursor: pointer;
+}
+span#btn-next {
+    position: absolute;
+    top: 40%;
+    right: 0%;
+    z-index: 10;
+    cursor: pointer;
+}
+.nut-slide span{
+    color: #cacaff;
+    font-size: 60px;
+    opacity: 0.8;
+}
+.nut-slide ul {
+    position: absolute;
+    z-index: 10;
+    width: 100px;
+    bottom: 8%;
+    left: 42%;
+    margin-left: -50px;
+    display: flex;
+    justify-content: space-between;
+}
+.nut-slide ul li {
+    width: 20px;
+    height: 20px;
+    background: white;
+    opacity: 0.6;
+    list-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+}

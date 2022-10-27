@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center">
+    <h1>Đăng nhập</h1>
+    Nhập username: <input id="username" placeholder="name"><br>
+    Nhập password: <input id="password" placeholder="password" type="password"><br>
+    <br>
+    <button onclick="login()">Đăng nhập</button>
+    <button onclick="location.href='dang-ky.html'">Đăng ký</button>
+</div>
+</body>
+</html>
+<script>
+    let accounts = JSON.parse(localStorage.getItem("accounts"));
+    if (accounts === null) {
+        accounts = [];
+    }
+
+    function login() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        for (let i=0; i<accounts.length; i++) {
+            if (accounts[i].username === username && accounts[i].password === password) {
+                location.href = "index.html";
+                return;
+            }
+        }
+        alert('sai thong tin')
+    }
+</script>
