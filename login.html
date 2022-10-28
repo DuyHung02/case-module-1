@@ -87,14 +87,14 @@
         for (let i=0; i<accounts.length; i++) {
             if (accounts[i].username === username && accounts[i].password === password) {
                 location.href = "index.html";
-                return;
+                return alert("Hello " + username )
             }
         }
         alert('Sai thông tin')
     }
 
     function CLoseW() {
-        window.location.href = "index.html"
+      location.href = "index.html"
 
     }
 </script>
