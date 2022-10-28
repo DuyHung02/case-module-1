@@ -1,5 +1,5 @@
 html {
-    background-image: url("img/background.webp");
+    background-image: url("../img/background.webp");
 }
 /*combo header*/
 #header {
@@ -17,14 +17,14 @@ html {
     left: 340px;
 }
 #logo {
-    content: url("img/logopet.png");
+    content: url("../img/logopet.png");
     position: absolute;
     top: -50px;
     width: 300px;
     height: 350px;
 }
 #tk {
-    content: url("img/tk.png");
+    content: url("../img/tk.png");
     position: absolute;
     width: 80px;
     top: 9px;
@@ -34,7 +34,7 @@ html {
     transform:translate(0,4px);
 }
 #shop {
-    content: url("img/shop.png");
+    content: url("../img/shop.png");
     position: absolute;
     width: 90px;
     top: 3px;
@@ -44,7 +44,7 @@ html {
     transform:translate(0,4px);
 }
 #cook {
-    content: url("img/cook.png");
+    content: url("../img/cook.png");
     position: absolute;
     width: 75px;
     top: 15px;
@@ -52,7 +52,7 @@ html {
 }
 #phone {
     position: absolute;
-    content: url("img/phone.png");
+    content: url("../img/phone.png");
     width: 70px;
     top: 17px;
     left: 660px;
